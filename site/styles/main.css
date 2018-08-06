@@ -1,0 +1,51 @@
+header{
+    background: lightgrey;
+    color: grey;
+    margin: 0%;
+}
+
+header nav h1{
+    color: black;
+    display: inline;
+    
+}
+
+body{
+    margin: 0%;
+    /* display: inline; */
+}
+
+nav ul{
+    margin: 0%;
+    display: inline;
+    /* padding: 0% 0% 0% 10% */
+ 
+}
+
+nav ul li{
+    display: inline-block;
+    background-color: black;
+    padding: 1% 3%;
+    margin: .5%
+}
+
+nav ul li a{
+    color: lightgrey
+}
+
+.row{
+    margin: 0%;
+}
+
+.col{
+    float: left;
+    background:lightslategray;
+    padding: 1%;
+    margin: 0.6%;
+    width: 30.13%;
+}
+
+footer{
+    align-content: center;
+    clear: both;
+}
