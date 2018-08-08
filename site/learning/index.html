@@ -1,143 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Learning</title>
-    <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-  </head>
-  <body>
-    <!-- Topography  -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Learning</title>
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  
+    .navbar{
+      margin-bottom:0;
+      border-radius: 0%; 
+    }
+  
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-inverse">
     <div class="container">
-      <h1 class="page-header">Hello, world! <small>Secondary Text</small></h1>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <p><mark>Lorem ipsum dolor</mark> sit amet consectetur adipisicing elit. Voluptatibus magni ratione vel, nulla quas molestias, dolorem repellendus, possimus nemo unde ducimus ipsum tenetur voluptates quibusdam velit voluptas commodi ipsa maxime!</p>
-      
-      <hr>
-      <!-- ALIGNMENT -->
-      <p class="text-left text-lowercase">Left Align Text</p>
-      <p class="text-right">Right Align Text</p>
-      <p class="text-center text-capitalize">Center Align Text</p>
-      <p class="text-justify text-uppercase">Justify Text</p>
-      <p class="text-nowrap">No wrap Text</p>
-
-      <!-- FLOAT -->
-      <div class="pull-left">Float Left</div>
-      <div class="pull-right">Float Right</div>
-
-      <!-- clear the float before inputting new tags -->
-      <div class="clearfix"></div>
-      <hr>
-
-      <!-- BLOCKQUOTE -->
-      <blockquote class="blockquote">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti exercitationem nostrum quibusdam obcaecati distinctio corporis ipsum sapiente, dolor voluptatum nesciunt modi maiores accusamus tempora. Maxime alias rerum odit saepe blanditiis.</p>
-        <footer>Quote by <cite title="Sunny">Sunny</cite></footer>
-      </blockquote>
-      
-      <!-- LIST -->
-      <ul>
-        <li class="bg-primary">Item one</li>
-        <li>Item two</li>
-        <li class="bg-danger">Item three</li>
-        <li>Item four</li>
-        <li class="bg-info">Item five</li>
-      </ul>
-      <hr>
-      <ul class="list-inline">
-        <li class="bg-primary">Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-        <li>Item four</li>
-        <li>Item five</li>
-      </ul>
-      <hr>
-      <ul class="list-unstyled">
-        <li class="text-primary">Item one</li>
-        <li class="text-success">Item two</li>
-        <li class="text-danger">Item three</li>
-        <li class="text-info">Item four</li>
-        <li class="text-warning">Item five</li>
-      </ul>
-      <hr>
-
-
-      <h3>List group Item</h3>
-      <ul class="list-group">
-        <li class="list-group-item">Item one</li>
-        <li class="list-group-item">Item two</li>
-        <li class="list-group-item">Item three</li>
-        <li class="list-group-item">Item four</li>
-      </ul>
-        
-      <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-danger">Link 1</a>
-          <a href="#" class="list-group-item active">Link 2</a>
-          <a href="#" class="list-group-item list-group-item-success">Link 3</a>
-          <a href="#" class="list-group-item disabled">Link 4</a>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
       </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Link
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="#">One more separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- Jumbotron -->
+
+  <div class="jumbotron">
+      <h1>Hello, world!</h1>
+      <p>...</p>
+      <p><a class="btn btn-primary btn-sm" href="#" role="button">Learn more</a></p>
+  </div>
+  <!-- Topography  -->
+  <div class="container">
+    <h1 class="page-header">Hello, world!
+      <small>Secondary Text</small>
+    </h1>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>
+      <mark>Lorem ipsum dolor</mark> sit amet consectetur adipisicing elit. Voluptatibus magni ratione vel, nulla quas molestias,
+      dolorem repellendus, possimus nemo unde ducimus ipsum tenetur voluptates quibusdam velit voluptas commodi ipsa maxime!</p>
+
+    <hr>
+    <!-- ALIGNMENT -->
+    <p class="text-left text-lowercase">Left Align Text</p>
+    <p class="text-right">Right Align Text</p>
+    <p class="text-center text-capitalize">Center Align Text</p>
+    <p class="text-justify text-uppercase">Justify Text</p>
+    <p class="text-nowrap">No wrap Text</p>
+
+    <!-- FLOAT -->
+    <div class="pull-left">Float Left</div>
+    <div class="pull-right">Float Right</div>
+
+    <!-- clear the float before inputting new tags -->
+    <div class="clearfix"></div>
+    <hr>
+
+    <!-- BLOCKQUOTE -->
+    <blockquote class="blockquote">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti exercitationem nostrum quibusdam obcaecati distinctio
+        corporis ipsum sapiente, dolor voluptatum nesciunt modi maiores accusamus tempora. Maxime alias rerum odit saepe
+        blanditiis.</p>
+      <footer>Quote by
+        <cite title="Sunny">Sunny</cite>
+      </footer>
+    </blockquote>
+
+    <!-- LIST -->
+    <ul>
+      <li class="bg-primary">Item one</li>
+      <li>Item two</li>
+      <li class="bg-danger">Item three</li>
+      <li>Item four</li>
+      <li class="bg-info">Item five</li>
+    </ul>
+    <hr>
+    <ul class="list-inline">
+      <li class="bg-primary">Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+      <li>Item four</li>
+      <li>Item five</li>
+    </ul>
+    <hr>
+    <ul class="list-unstyled">
+      <li class="text-primary">Item one</li>
+      <li class="text-success">Item two</li>
+      <li class="text-danger">Item three</li>
+      <li class="text-info">Item four</li>
+      <li class="text-warning">Item five</li>
+    </ul>
     <hr>
 
 
-    <!-- Buttons -->
-    <div class="container">
-      <button class="btn btn-default">Defalut</button>
-      <a href="#" class="btn btn-link" role="button">Link</a>
+    <h3>List group Item</h3>
+    <ul class="list-group">
+      <li class="list-group-item">Item one</li>
+      <li class="list-group-item">Item two</li>
+      <li class="list-group-item">Item three</li>
+      <li class="list-group-item">Item four</li>
+    </ul>
 
-      <!-- CONTEXTUAL BUTTONS -->
-      <button class="btn btn-default btn-lg">Defalut</button>
-      <button class="btn btn-primary btn-sm">Primary</button>
-      <button class="btn btn-success btn-xs">Success</button>
-      <button class="btn btn-danger">Danger</button>
-      <button class="btn btn-warning">Warning</button>
-      <button class="btn btn-link" disabled="disabled">link</button>
-    <hr>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-danger">Link 1</a>
+      <a href="#" class="list-group-item active">Link 2</a>
+      <a href="#" class="list-group-item list-group-item-success">Link 3</a>
+      <a href="#" class="list-group-item disabled">Link 4</a>
     </div>
 
-    <!-- FORMS -->
-    <div class="container">
-      <form>
-        <div class="form-group">
-          <label>Name</label>
-          <input type="text" class="form-control" placeholder="Enter Name">
-        </div>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" class="form-control" placeholder="Enter Email">
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea class="form-control" placeholder="Input Message"></textarea>
-        </div>
-        <div class="form-group">
-          <label>Gender</label>
-          <select class="form-control">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
+  </div>
+  <hr>
 
-        </div>
-        <div class="form-group">
-          <label>File Upload</label>
-          <input type="file">
-          <p class="help-block">Max size of 20MB Only</p>
-        </div>
-        <div class="form-group">
-          <label>
-          <input type="checkbox"> Check box 
-          </label>
-        </div>
 
-        <button type="submit" class="btn btn-default">Submit</button>
+  <!-- Buttons -->
+  <div class="container">
+    <button class="btn btn-default">Defalut</button>
+    <a href="#" class="btn btn-link" role="button">Link</a>
 
-      </form>
-      <hr>
+    <!-- CONTEXTUAL BUTTONS -->
+    <button class="btn btn-default btn-lg">Defalut</button>
+    <button class="btn btn-primary btn-sm">Primary</button>
+    <button class="btn btn-success btn-xs">Success</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-link" disabled="disabled">link</button>
+    <hr>
+  </div>
+
+  <!-- FORMS -->
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Enter Email">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea class="form-control" placeholder="Input Message"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Gender</label>
+        <select class="form-control">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+      </div>
+      <div class="form-group">
+        <label>File Upload</label>
+        <input type="file">
+        <p class="help-block">Max size of 20MB Only</p>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox"> Check box
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+
+    </form>
+    <hr>
 
 
     <!-- Inline FORMS -->
@@ -153,13 +262,13 @@
         </div>
         <div class="form-group">
           <label>
-          <input type="checkbox"> Remember me 
+            <input type="checkbox"> Remember me
           </label>
         </div>
 
         <button type="submit" class="btn btn-default">Login</button>
       </form>
-      
+
     </div>
     <hr>
 
@@ -186,14 +295,14 @@
           <th>Sunny</th>
           <th>23</th>
         </tr>
-        
+
       </table>
 
     </div>
     <!-- Panel, Wells, Progress Bars-->
 
     <div class="container">
-    <div class="panel panel-default">
+      <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">Panel title</h3>
         </div>
@@ -216,7 +325,9 @@
     <div class="alert alert-success" role="alert">Alert Success</div>
 
     <div class="alert alert-warning alert-dismissable" role="alert">
-      <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+      <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+      </button>
       Alert Dismissable
     </div>
     <p>Progress Bar: </p>
@@ -225,14 +336,75 @@
       <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:20%;">
         20%
       </div>
+    </div>
+
+    <!-- Badge -->
+    <div class="container">
+      <a href="#">Inbox
+        <span class="badge">3</span>
+      </a>
+      <button class="btn btn-primary" type="button">Messages
+        <span class="badge">30</span>
+      </button>
+    </div>
+    <!-- Images -->
+
+    <div class="container">
+      <img class="img-circle" style="height: 100px; width: 100px" src="https://cdn.pixabay.com/photo/2015/06/19/17/58/sample-815141_1280.jpg">
+      <img class="img-thumbnail" style="height: 100px; width: 100px" src="https://cdn.pixabay.com/photo/2015/06/19/17/58/sample-815141_1280.jpg">
+      <img class="img-rounded" style="height: 100px; width: 100px" src="https://cdn.pixabay.com/photo/2015/06/19/17/58/sample-815141_1280.jpg">
 
     </div>
+
+    <hr>
+
+    <!-- grids -->
+    <h3>GRIDS</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At maxime quo aut, exercitationem ipsum ullam, perferendis
+            nobis quod ratione ea expedita libero! Qui nesciunt alias nulla facilis officia aperiam amet.</p>
+        </div>
+
+        <div class="col-md-4">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ipsum omnis sint eos magnam amet asperiores sit
+            dolor facere cum</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ipsum omnis sint eos magnam amet asperiores sit
+            dolor facere cum</p>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ipsum omnis sint eos magnam amet asperiores sit
+            dolor facere cum</p>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ipsum omnis sint eos magnam amet asperiores sit
+            dolor facere cum</p>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ipsum omnis sint eos magnam amet asperiores sit
+            dolor facere cum</p>
+        </div>
+      </div>
+
+    </div>
+
+
     <hr>
     <div class="footer container">Footer</div>
-    
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
