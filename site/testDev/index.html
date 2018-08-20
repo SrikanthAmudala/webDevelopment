@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Learning</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Image Properties</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">One more separated link</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Link1</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- grids -->
+    <h3>GRIDS</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At maxime quo aut, exercitationem ipsum ullam,
+                    perferendis nobis quod ratione ea expedita libero! Qui nesciunt alias nulla facilis officia aperiam amet.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ipsum omnis sint eos magnam amet asperiores
+                    sit dolor facere cum</p>
+            </div>
+        </div>
+
+    </div>
+
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <label>API</label>
+                    <input type="text" class="form-control" placeholder="Enter API URL">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Method</label>
+                    <select class="form-control">
+                            <option value="get">GET</option>
+                            <option value="post">POST</option>
+                            
+                        </select>
+                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>File Upload</label>
+                <input type="file">
+                <p class="help-block">Max size of 20MB Only</p>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> Check box
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+
+    </form>
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
